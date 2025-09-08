@@ -1,8 +1,48 @@
-# React + Vite
+# template-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Structure
+- `frontend/` - React + Vite app
+- `backend/` - Node.js + Express app
 
-Currently, two official plugins are available:
+## Installation Steps
+Open gitbash
+### 1. Backend (Node.js + Express)
+1. Open a terminal and navigate to the `backend` folder:
+   ```sh
+   cd backend
+   ```
+2. Initialize a new Node.js project and install Express:
+   ```sh
+   npm init -y
+   npm install express
+   ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 2. Frontend (React + Vite)
+1. Open a terminal and navigate to the `frontend` folder:
+   ```sh
+   cd frontend
+   ```
+2. Create a new React + Vite project:
+   ```sh
+   npm create vite@latest . -- --template react
+   npm install
+   ```
+
+### 3. PowerShell Note (Windows Only)
+If you see a script execution error, run PowerShell as Administrator and execute:
+```sh
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+## Running the Apps
+
+### Backend
+```sh
+cd backend
+node index.js # or your main server file
+```
+### Frontend
+```sh
+cd frontend
+npm run dev 
+```
